@@ -22,13 +22,16 @@
 }
 body {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .contact-card {
   display: flex;
   padding: 10px;
@@ -37,11 +40,11 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   box-shadow: 10px 10px 25px -16px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
-  width: 500px;
+  width: 350px;
   height: 130px;
   margin: 10px;
+  overflow: hidden;
 }
-
 .contact-card p {
   margin-left: 10px;
   margin-top: 0;
@@ -55,4 +58,21 @@ button {
   margin: 10px;
   height: 50px;
   width: 150px;
+  font-size: 15px;
+}
+.age-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+.email-text {
+  font-size: 14px;
+}
+.user-details {
+  position: relative;
+}
+#people {
+  font-size: 15px;
+  padding: 5px;
 }
